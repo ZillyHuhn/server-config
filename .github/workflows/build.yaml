@@ -23,4 +23,4 @@ jobs:
         sudo service apache2 status || true
         sudo a2enmod proxy
         sudo service apache2 restart || true
-        suod journalctl -e --no-pager || true
+        sudo journalctl -e --no-pager || true
