@@ -21,4 +21,6 @@ jobs:
         sudo cp etc/apache2/sites-available/* /etc/apache2/sites-available/
         sudo service apache2 restart || true
         sudo service apache2 status || true
-        suod journalctl -e --no-pager
+        sudo a2enmod proxy
+        sudo service apache2 restart || true
+        suod journalctl -e --no-pager || true
