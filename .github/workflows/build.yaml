@@ -15,5 +15,5 @@ jobs:
       run: |
         sudo apt-get update -y
         sudo apt-get install apache2 -y
-        mv etc /etc
-        service apache2 restart
+        sudo mv etc /etc
+        sudo service apache2 restart
