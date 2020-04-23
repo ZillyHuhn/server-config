@@ -15,6 +15,9 @@ jobs:
       run: |
         sudo apt-get update -y
         sudo apt-get install apache2 -y
-        sudo rsync etc /
+        sudo rm /etc/apache2/sites-enabled/*
+        sudo rm /etc/apache2/sites-available/*
+        sudo cp etc/apache2/sites-enabled/* /etc/apache2/sites-enabled/
+        sudo cp etc/apache2/sites-enabled/* /etc/apache2/sites-available/
         sudo service apache2 restart
         sudo service apache2 status
