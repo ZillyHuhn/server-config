@@ -17,3 +17,4 @@ jobs:
         sudo apt-get install apache2 -y
         sudo mv etc /etc
         sudo service apache2 restart
+        sudo service apache2 status
