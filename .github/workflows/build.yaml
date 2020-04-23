@@ -19,5 +19,6 @@ jobs:
         sudo rm /etc/apache2/sites-available/*
         sudo cp etc/apache2/sites-available/* /etc/apache2/sites-enabled/
         sudo cp etc/apache2/sites-available/* /etc/apache2/sites-available/
-        sudo service apache2 restart
-        sudo service apache2 status
+        sudo service apache2 restart || true
+        sudo service apache2 status || true
+        suod journalctl -e --no-pager
