@@ -12,9 +12,6 @@ function backup_cfg() {
 
 backup_cfg /etc/apache2/sites-available/paste.zillyhuhn.com-le-ssl.conf
 backup_cfg /etc/apache2/sites-available/zillyhuhn.com.conf
-backup_cfg /etc/apache2/sites-available/default-ssl.conf
-backup_cfg /etc/apache2/sites-available/000-default.conf
-backup_cfg /etc/apache2/sites-available/default-tls.conf
 backup_cfg /etc/apache2/sites-available/paste.zillyhuhn.com.conf
 backup_cfg /etc/apache2/sites-available/zillyhuhn.com-le-ssl.conf
 
@@ -35,9 +32,6 @@ fi
 cd etc/apache2/sites-available || exit 1
 cp paste.zillyhuhn.com-le-ssl.conf /etc/apache2/sites-available/paste.zillyhuhn.com-le-ssl.conf
 cp zillyhuhn.com.conf              /etc/apache2/sites-available/zillyhuhn.com.conf             
-cp default-ssl.conf                /etc/apache2/sites-available/default-ssl.conf               
-cp 000-default.conf                /etc/apache2/sites-available/000-default.conf               
-cp default-tls.conf                /etc/apache2/sites-available/default-tls.conf               
 cp paste.zillyhuhn.com.conf        /etc/apache2/sites-available/paste.zillyhuhn.com.conf       
 cp zillyhuhn.com-le-ssl.conf       /etc/apache2/sites-available/zillyhuhn.com-le-ssl.conf      
 
