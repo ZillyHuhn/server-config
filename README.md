@@ -17,6 +17,6 @@ sudo apt install apache2
 git clone https://github.com/ZillyHuhn/server-config
 cd server-config
 ./push.sh
-bash generate-ssl-cert.sh
+sh generate-ssl-cert.sh
 ```
 

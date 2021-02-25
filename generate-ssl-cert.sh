@@ -1,17 +1,17 @@
-#!/bin/bash
+#!/bin/sh
 
+# main site cert
+# /etc/letsencrypt/live/zillyhuhn.com/
+certbot certonly \
+     -d zillyhuhn.com -d www.zillyhuhn.com
+
+# subdomain wildcart cert
+# /etc/letsencrypt/live/zillyhuhn.com-0001/
 certbot certonly \
     --manual \
     --preferred-challenges=dns \
     --email chillerdragon@gmail.com \
     --server https://acme-v02.api.letsencrypt.org/directory \
     --agree-tos \
-    -d *.zillyhuhn.com
-
-# old explicit sub domains
-
-# certbot certonly \
-#     -d zillyhuhn.com -d www.zillyhuhn.com \
-#     -d paste.zillyhuhn.com -d www.paste.zillyhuhn.com \
-#     -d mail.zillyhuhn.com -d www.mail.zillyhuhn.com
+    -d '*.zillyhuhn.com'
 
