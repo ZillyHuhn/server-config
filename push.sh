@@ -10,14 +10,14 @@ function backup_cfg() {
     cp "$1" /tmp/zilly-apache
 }
 
+backup_cfg /etc/apache2/sites-available/001-zillyhuhn.com.conf
+backup_cfg /etc/apache2/sites-available/001-zillyhuhn.com-le-ssl.conf
 backup_cfg /etc/apache2/sites-available/api-fddr.zillyhuhn.com.conf
 backup_cfg /etc/apache2/sites-available/api-fddr.zillyhuhn.com-le-ssl.conf
 backup_cfg /etc/apache2/sites-available/mail.zillyhuhn.com.conf
 backup_cfg /etc/apache2/sites-available/mail.zillyhuhn.com-le-ssl.conf
 backup_cfg /etc/apache2/sites-available/paste.zillyhuhn.com.conf
 backup_cfg /etc/apache2/sites-available/paste.zillyhuhn.com-le-ssl.conf
-backup_cfg /etc/apache2/sites-available/zillyhuhn.com.conf
-backup_cfg /etc/apache2/sites-available/zillyhuhn.com-le-ssl.conf
 
 echo "WARNING THIS WILL OVERWRITE YOUR SYSTEM CONFIGURATION!!!"
 echo "DATA WILL BE LOST!!!"
@@ -34,12 +34,12 @@ then
 fi
 
 cd etc/apache2/sites-available || exit 1
-cp api-fddr.zillyhuhn.com.conf         /etc/apache2/sites-available/api-fddr.zillyhuhn.com.conf
-cp api-fddr.zillyhuhn.com-le-ssl.conf  /etc/apache2/sites-available/api-fddr.zillyhuhn.com-le-ssl.conf
-cp mail.zillyhuhn.com.conf             /etc/apache2/sites-available/mail.zillyhuhn.com.conf
-cp mail.zillyhuhn.com-le-ssl.conf      /etc/apache2/sites-available/mail.zillyhuhn.com-le-ssl.conf
-cp paste.zillyhuhn.com.conf            /etc/apache2/sites-available/paste.zillyhuhn.com.conf
-cp paste.zillyhuhn.com-le-ssl.conf     /etc/apache2/sites-available/paste.zillyhuhn.com-le-ssl.conf
-cp zillyhuhn.com.conf                  /etc/apache2/sites-available/zillyhuhn.com.conf
-cp zillyhuhn.com-le-ssl.conf           /etc/apache2/sites-available/zillyhuhn.com-le-ssl.conf
+cp 001-zillyhuhn.com.conf               /etc/apache2/sites-available/001-zillyhuhn.com.conf
+cp 001-zillyhuhn.com-le-ssl.conf        /etc/apache2/sites-available/001-zillyhuhn.com-le-ssl.conf
+cp api-fddr.zillyhuhn.com.conf          /etc/apache2/sites-available/api-fddr.zillyhuhn.com.conf
+cp api-fddr.zillyhuhn.com-le-ssl.conf   /etc/apache2/sites-available/api-fddr.zillyhuhn.com-le-ssl.conf
+cp mail.zillyhuhn.com.conf              /etc/apache2/sites-available/mail.zillyhuhn.com.conf
+cp mail.zillyhuhn.com-le-ssl.conf       /etc/apache2/sites-available/mail.zillyhuhn.com-le-ssl.conf
+cp paste.zillyhuhn.com.conf             /etc/apache2/sites-available/paste.zillyhuhn.com.conf
+cp paste.zillyhuhn.com-le-ssl.conf      /etc/apache2/sites-available/paste.zillyhuhn.com-le-ssl.conf
 
