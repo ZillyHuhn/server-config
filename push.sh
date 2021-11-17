@@ -20,6 +20,8 @@ backup_cfg /etc/apache2/sites-available/mail.zillyhuhn.com.conf
 backup_cfg /etc/apache2/sites-available/mail.zillyhuhn.com-le-ssl.conf
 backup_cfg /etc/apache2/sites-available/paste.zillyhuhn.com.conf
 backup_cfg /etc/apache2/sites-available/paste.zillyhuhn.com-le-ssl.conf
+backup_cfg /etc/apache2/sites-available/trans.zillyhuhn.com.conf
+backup_cfg /etc/apache2/sites-available/trans.zillyhuhn.com-le-ssl.conf
 
 echo "WARNING THIS WILL OVERWRITE YOUR SYSTEM CONFIGURATION!!!"
 echo "DATA WILL BE LOST!!!"
@@ -46,4 +48,6 @@ cp mail.zillyhuhn.com.conf              /etc/apache2/sites-available/mail.zillyh
 cp mail.zillyhuhn.com-le-ssl.conf       /etc/apache2/sites-available/mail.zillyhuhn.com-le-ssl.conf
 cp paste.zillyhuhn.com.conf             /etc/apache2/sites-available/paste.zillyhuhn.com.conf
 cp paste.zillyhuhn.com-le-ssl.conf      /etc/apache2/sites-available/paste.zillyhuhn.com-le-ssl.conf
+cp trans.zillyhuhn.com.conf             /etc/apache2/sites-available/trans.zillyhuhn.com.conf
+cp trans.zillyhuhn.com-le-ssl.conf      /etc/apache2/sites-available/trans.zillyhuhn.com-le-ssl.conf
 
