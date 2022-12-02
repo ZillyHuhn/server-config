@@ -18,4 +18,7 @@ cp /etc/apache2/sites-available/trans.zillyhuhn.com.conf            trans.zillyh
 cp /etc/apache2/sites-available/trans.zillyhuhn.com-le-ssl.conf     trans.zillyhuhn.com-le-ssl.conf
 cp /etc/apache2/sites-available/tube.zillyhuhn.com.conf             tube.zillyhuhn.com.conf
 cp /etc/apache2/sites-available/tube.zillyhuhn.com-le-ssl.conf      tube.zillyhuhn.com-le-ssl.conf
+cp /etc/apache2/sites-available/ddnetpp.zillyhuhn.com.conf          ddnetpp.zillyhuhn.com.conf
+cp /etc/apache2/sites-available/ddnetpp.zillyhuhn.com-le-ssl.conf   ddnetpp.zillyhuhn.com-le-ssl.conf
+cp /etc/apache2/sites-available/filetype_whitelist.conf             filetype_whitelist.conf
 
