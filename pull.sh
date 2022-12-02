@@ -16,4 +16,6 @@ cp /etc/apache2/sites-available/paste.zillyhuhn.com.conf            paste.zillyh
 cp /etc/apache2/sites-available/paste.zillyhuhn.com-le-ssl.conf     paste.zillyhuhn.com-le-ssl.conf
 cp /etc/apache2/sites-available/trans.zillyhuhn.com.conf            trans.zillyhuhn.com.conf
 cp /etc/apache2/sites-available/trans.zillyhuhn.com-le-ssl.conf     trans.zillyhuhn.com-le-ssl.conf
+cp /etc/apache2/sites-available/tube.zillyhuhn.com.conf             tube.zillyhuhn.com.conf
+cp /etc/apache2/sites-available/tube.zillyhuhn.com-le-ssl.conf      tube.zillyhuhn.com-le-ssl.conf
 
