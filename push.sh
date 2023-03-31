@@ -29,6 +29,8 @@ backup_cfg /etc/apache2/sites-available/tube.zillyhuhn.com-le-ssl.conf
 backup_cfg /etc/apache2/sites-available/ddnetpp.zillyhuhn.com.conf
 backup_cfg /etc/apache2/sites-available/ddnetpp.zillyhuhn.com-le-ssl.conf
 backup_cfg /etc/apache2/sites-available/filetype_whitelist.conf
+backup_cfg /etc/apache2/sites-available/ascii.zillyhuhn.com.conf
+backup_cfg /etc/apache2/sites-available/ascii.zillyhuhn.com-le-ssl.conf
 
 echo "WARNING THIS WILL OVERWRITE YOUR SYSTEM CONFIGURATION!!!"
 echo "DATA WILL BE LOST!!!"
@@ -64,3 +66,5 @@ cp tube.zillyhuhn.com-le-ssl.conf           /etc/apache2/sites-available/tube.zi
 cp ddnetpp.zillyhuhn.com.conf               /etc/apache2/sites-available/ddnetpp.zillyhuhn.com.conf
 cp ddnetpp.zillyhuhn.com-le-ssl.conf        /etc/apache2/sites-available/ddnetpp.zillyhuhn.com-le-ssl.conf
 cp filetype_whitelist.conf                  /etc/apache2/sites-available/filetype_whitelist.conf
+cp ascii.zillyhuhn.com.conf                 /etc/apache2/sites-available/ascii.zillyhuhn.com.conf
+cp ascii.zillyhuhn.com-le-ssl.conf          /etc/apache2/sites-available/ascii.zillyhuhn.com-le-ssl.conf
