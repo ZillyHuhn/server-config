@@ -47,24 +47,30 @@ then
 fi
 
 cd etc/apache2/sites-available || exit 1
-cp 001-zillyhuhn.com.conf                   /etc/apache2/sites-available/001-zillyhuhn.com.conf
-cp 001-zillyhuhn.com-le-ssl.conf            /etc/apache2/sites-available/001-zillyhuhn.com-le-ssl.conf
-cp api-fddr.zillyhuhn.com.conf              /etc/apache2/sites-available/api-fddr.zillyhuhn.com.conf
-cp api-fddr.zillyhuhn.com-le-ssl.conf       /etc/apache2/sites-available/api-fddr.zillyhuhn.com-le-ssl.conf
-cp captcha.zillyhuhn.com.conf               /etc/apache2/sites-available/captcha.zillyhuhn.com.conf
-cp captcha.zillyhuhn.com-le-ssl.conf        /etc/apache2/sites-available/captcha.zillyhuhn.com-le-ssl.conf
-cp chillerbot.zillyhuhn.com.conf            /etc/apache2/sites-available/chillerbot.zillyhuhn.com.conf
-cp chillerbot.zillyhuhn.com-le-ssl.conf     /etc/apache2/sites-available/chillerbot.zillyhuhn.com-le-ssl.conf
-cp mail.zillyhuhn.com.conf                  /etc/apache2/sites-available/mail.zillyhuhn.com.conf
-cp mail.zillyhuhn.com-le-ssl.conf           /etc/apache2/sites-available/mail.zillyhuhn.com-le-ssl.conf
-cp paste.zillyhuhn.com.conf                 /etc/apache2/sites-available/paste.zillyhuhn.com.conf
-cp paste.zillyhuhn.com-le-ssl.conf          /etc/apache2/sites-available/paste.zillyhuhn.com-le-ssl.conf
-cp trans.zillyhuhn.com.conf                 /etc/apache2/sites-available/trans.zillyhuhn.com.conf
-cp trans.zillyhuhn.com-le-ssl.conf          /etc/apache2/sites-available/trans.zillyhuhn.com-le-ssl.conf
-cp tube.zillyhuhn.com.conf                  /etc/apache2/sites-available/tube.zillyhuhn.com.conf
-cp tube.zillyhuhn.com-le-ssl.conf           /etc/apache2/sites-available/tube.zillyhuhn.com-le-ssl.conf
-cp ddnetpp.zillyhuhn.com.conf               /etc/apache2/sites-available/ddnetpp.zillyhuhn.com.conf
-cp ddnetpp.zillyhuhn.com-le-ssl.conf        /etc/apache2/sites-available/ddnetpp.zillyhuhn.com-le-ssl.conf
-cp filetype_whitelist.conf                  /etc/apache2/sites-available/filetype_whitelist.conf
-cp ascii.zillyhuhn.com.conf                 /etc/apache2/sites-available/ascii.zillyhuhn.com.conf
-cp ascii.zillyhuhn.com-le-ssl.conf          /etc/apache2/sites-available/ascii.zillyhuhn.com-le-ssl.conf
+
+cp_file() {
+	local filepath="$1"
+	cp "$(basename "$filepath")" "$filepath"
+}
+
+cp_file /etc/apache2/sites-available/001-zillyhuhn.com.conf
+cp_file /etc/apache2/sites-available/001-zillyhuhn.com-le-ssl.conf
+cp_file /etc/apache2/sites-available/api-fddr.zillyhuhn.com.conf
+cp_file /etc/apache2/sites-available/api-fddr.zillyhuhn.com-le-ssl.conf
+cp_file /etc/apache2/sites-available/captcha.zillyhuhn.com.conf
+cp_file /etc/apache2/sites-available/captcha.zillyhuhn.com-le-ssl.conf
+cp_file /etc/apache2/sites-available/chillerbot.zillyhuhn.com.conf
+cp_file /etc/apache2/sites-available/chillerbot.zillyhuhn.com-le-ssl.conf
+cp_file /etc/apache2/sites-available/mail.zillyhuhn.com.conf
+cp_file /etc/apache2/sites-available/mail.zillyhuhn.com-le-ssl.conf
+cp_file /etc/apache2/sites-available/paste.zillyhuhn.com.conf
+cp_file /etc/apache2/sites-available/paste.zillyhuhn.com-le-ssl.conf
+cp_file /etc/apache2/sites-available/trans.zillyhuhn.com.conf
+cp_file /etc/apache2/sites-available/trans.zillyhuhn.com-le-ssl.conf
+cp_file /etc/apache2/sites-available/tube.zillyhuhn.com.conf
+cp_file /etc/apache2/sites-available/tube.zillyhuhn.com-le-ssl.conf
+cp_file /etc/apache2/sites-available/ddnetpp.zillyhuhn.com.conf
+cp_file /etc/apache2/sites-available/ddnetpp.zillyhuhn.com-le-ssl.conf
+cp_file /etc/apache2/sites-available/filetype_whitelist.conf
+cp_file /etc/apache2/sites-available/ascii.zillyhuhn.com.conf
+cp_file /etc/apache2/sites-available/ascii.zillyhuhn.com-le-ssl.conf
