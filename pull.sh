@@ -31,4 +31,6 @@ cp_file /etc/apache2/sites-available/ascii.zillyhuhn.com.conf
 cp_file /etc/apache2/sites-available/ascii.zillyhuhn.com-le-ssl.conf
 cp_file /etc/apache2/sites-available/api-whaah.zillyhuhn.com.conf
 cp_file /etc/apache2/sites-available/api-whaah.zillyhuhn.com-le-ssl.conf
+cp_file /etc/apache2/sites-available/chat.zillyhuhn.com.conf
+cp_file /etc/apache2/sites-available/chat.zillyhuhn.com-le-ssl.conf
 

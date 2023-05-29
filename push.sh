@@ -33,6 +33,8 @@ backup_cfg /etc/apache2/sites-available/ascii.zillyhuhn.com.conf
 backup_cfg /etc/apache2/sites-available/ascii.zillyhuhn.com-le-ssl.conf
 backup_cfg /etc/apache2/sites-available/api-whaah.zillyhuhn.com.conf
 backup_cfg /etc/apache2/sites-available/api-whaah.zillyhuhn.com-le-ssl-le-ssl.conf
+backup_cfg /etc/apache2/sites-available/chat.zillyhuhn.com.conf
+backup_cfg /etc/apache2/sites-available/chat.zillyhuhn.com-le-ssl.conf
 
 echo "WARNING THIS WILL OVERWRITE YOUR SYSTEM CONFIGURATION!!!"
 echo "DATA WILL BE LOST!!!"
@@ -78,3 +80,5 @@ cp_file /etc/apache2/sites-available/ascii.zillyhuhn.com.conf
 cp_file /etc/apache2/sites-available/ascii.zillyhuhn.com-le-ssl.conf
 cp_file /etc/apache2/sites-available/api-whaah.zillyhuhn.com.conf
 cp_file /etc/apache2/sites-available/api-whaah.zillyhuhn.com-le-ssl.conf
+cp_file /etc/apache2/sites-available/chat.zillyhuhn.com.conf
+cp_file /etc/apache2/sites-available/chat.zillyhuhn.com-le-ssl.conf
