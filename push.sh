@@ -84,3 +84,5 @@ cp_file /etc/apache2/sites-available/chat.zillyhuhn.com.conf
 cp_file /etc/apache2/sites-available/chat.zillyhuhn.com-le-ssl.conf
 cp_file /etc/apache2/sites-available/ws-irc.zillyhuhn.com.conf
 cp_file /etc/apache2/sites-available/ws-irc.zillyhuhn.com-le-ssl-conf
+cp_file /etc/apache2/sites-available/2b2w.zillyhuhn.com.conf
+cp_file /etc/apache2/sites-available/2b2w.zillyhuhn.com-le-ssl.conf
