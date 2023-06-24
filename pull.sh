@@ -1,5 +1,7 @@
-#!/bin/sh
+#!/bin/bash
 # pull.sh
+
+source lib.sh || exit 1
 
 cd etc/apache2/sites-available || exit 1
 
@@ -11,5 +13,5 @@ cp_file() {
 while read -r cfg
 do
 	cp_file "$cfg"
-done < <(awk NF ./tracked_files.txt | grep '^/')
+done < <(list_all_files)
 

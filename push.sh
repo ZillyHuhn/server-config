@@ -1,6 +1,8 @@
 #!/bin/bash
 # push.sh
 
+source lib.sh || exit 1
+
 function backup_cfg() {
     if [ ! -f "$1" ]
     then
@@ -13,7 +15,7 @@ function backup_cfg() {
 while read -r cfg
 do
 	backup_cfg "$cfg"
-done < <(awk NF ./tracked_files.txt | grep '^/')
+done < <(list_all_files)
 
 echo "WARNING THIS WILL OVERWRITE YOUR SYSTEM CONFIGURATION!!!"
 echo "DATA WILL BE LOST!!!"
@@ -39,5 +41,5 @@ cp_file() {
 while read -r cfg
 do
 	cp_file "$cfg"
-done < <(awk NF ./tracked_files.txt | grep '^/')
+done < <(list_all_files)
 
