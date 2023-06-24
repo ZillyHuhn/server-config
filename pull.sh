@@ -15,3 +15,10 @@ do
 	cp_file "$cfg"
 done < <(list_all_files)
 
+while read -r cfg
+do
+	if ! list_all_files | grep -q "$cfg"
+	then
+		echo "Warning: file not tracked $cfg"
+	fi
+done < <(find /etc/apache2/sites-available/)
