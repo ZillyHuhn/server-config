@@ -8,35 +8,8 @@ cp_file() {
 	cp "$filepath" "$(basename "$filepath")"
 }
 
-cp_file /etc/apache2/sites-available/001-zillyhuhn.com.conf
-cp_file /etc/apache2/sites-available/001-zillyhuhn.com-le-ssl.conf
-cp_file /etc/apache2/sites-available/api-fddr.zillyhuhn.com.conf
-cp_file /etc/apache2/sites-available/api-fddr.zillyhuhn.com-le-ssl.conf
-cp_file /etc/apache2/sites-available/captcha.zillyhuhn.com.conf
-cp_file /etc/apache2/sites-available/captcha.zillyhuhn.com-le-ssl.conf
-cp_file /etc/apache2/sites-available/chillerbot.zillyhuhn.com.conf
-cp_file /etc/apache2/sites-available/chillerbot.zillyhuhn.com-le-ssl.conf
-cp_file /etc/apache2/sites-available/mail.zillyhuhn.com.conf
-cp_file /etc/apache2/sites-available/mail.zillyhuhn.com-le-ssl.conf
-cp_file /etc/apache2/sites-available/paste.zillyhuhn.com.conf
-cp_file /etc/apache2/sites-available/paste.zillyhuhn.com-le-ssl.conf
-cp_file /etc/apache2/sites-available/trans.zillyhuhn.com.conf
-cp_file /etc/apache2/sites-available/trans.zillyhuhn.com-le-ssl.conf
-cp_file /etc/apache2/sites-available/tube.zillyhuhn.com.conf
-cp_file /etc/apache2/sites-available/tube.zillyhuhn.com-le-ssl.conf
-cp_file /etc/apache2/sites-available/ddnetpp.zillyhuhn.com.conf
-cp_file /etc/apache2/sites-available/ddnetpp.zillyhuhn.com-le-ssl.conf
-cp_file /etc/apache2/sites-available/filetype_whitelist.conf
-cp_file /etc/apache2/sites-available/ascii.zillyhuhn.com.conf
-cp_file /etc/apache2/sites-available/ascii.zillyhuhn.com-le-ssl.conf
-cp_file /etc/apache2/sites-available/api-whaah.zillyhuhn.com.conf
-cp_file /etc/apache2/sites-available/api-whaah.zillyhuhn.com-le-ssl.conf
-cp_file /etc/apache2/sites-available/chat.zillyhuhn.com.conf
-cp_file /etc/apache2/sites-available/chat.zillyhuhn.com-le-ssl.conf
-cp_file /etc/apache2/sites-available/ws-irc.zillyhuhn.com.conf
-cp_file /etc/apache2/sites-available/ws-irc.zillyhuhn.com-le-ssl.conf
-cp_file /etc/apache2/sites-available/2b2w.zillyhuhn.com.conf
-cp_file /etc/apache2/sites-available/2b2w.zillyhuhn.com-le-ssl.conf
-cp_file /etc/apache2/sites-available/ocp.zillyhuhn.com.conf
-cp_file /etc/apache2/sites-available/ocp.zillyhuhn.com-le-ssl.conf
+while read -r cfg
+do
+	cp_file "$cfg"
+done < <(awk NF ./tracked_files.txt | grep '^/')
 
