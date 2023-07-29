@@ -21,7 +21,6 @@
 /etc/apache2/sites-available/ascii.zillyhuhn.com-le-ssl.conf
 /etc/apache2/sites-available/api-whaah.zillyhuhn.com.conf
 /etc/apache2/sites-available/api-whaah.zillyhuhn.com-le-ssl.conf
-/etc/apache2/sites-available/whaah-api.zillyhuhn.com.conf
 /etc/apache2/sites-available/chat.zillyhuhn.com.conf
 /etc/apache2/sites-available/chat.zillyhuhn.com-le-ssl.conf
 /etc/apache2/sites-available/ws-irc.zillyhuhn.com.conf
