@@ -30,6 +30,7 @@
 /etc/apache2/sites-available/tw-api.zillyhuhn.com.conf
 /etc/apache2/sites-available/tw-api.zillyhuhn.com-le-ssl.conf
 /etc/apache2/sites-available/logs.zillyhuhn.com.conf
+/etc/apache2/sites-available/twnet.zillyhuhn.com.conf
 
 # ger2
 /etc/apache2/sites-available/2b2w.ger2.zillyhuhn.com.conf
