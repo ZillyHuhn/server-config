@@ -11,9 +11,7 @@
 /etc/apache2/sites-available/paste.zillyhuhn.com.conf
 /etc/apache2/sites-available/paste.zillyhuhn.com-le-ssl.conf
 /etc/apache2/sites-available/trans.zillyhuhn.com.conf
-/etc/apache2/sites-available/trans.zillyhuhn.com-le-ssl.conf
 /etc/apache2/sites-available/tube.zillyhuhn.com.conf
-/etc/apache2/sites-available/tube.zillyhuhn.com-le-ssl.conf
 /etc/apache2/sites-available/ddnetpp.zillyhuhn.com.conf
 /etc/apache2/sites-available/ddnetpp.zillyhuhn.com-le-ssl.conf
 /etc/apache2/sites-available/filetype_whitelist.conf
