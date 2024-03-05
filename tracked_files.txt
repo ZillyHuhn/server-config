@@ -35,3 +35,6 @@
 # ger2
 /etc/apache2/sites-available/2b2w.ger2.zillyhuhn.com.conf
 /etc/apache2/sites-available/2b2w.ger2.zillyhuhn.com-le-ssl.conf
+
+# ger3
+/etc/apache2/sites-available/0xf.zillyhuhn.com.conf
