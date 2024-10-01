@@ -3,7 +3,6 @@
 /etc/apache2/sites-available/api-fddr.zillyhuhn.com.conf
 /etc/apache2/sites-available/api-fddr.zillyhuhn.com-le-ssl.conf
 /etc/apache2/sites-available/captcha.zillyhuhn.com.conf
-/etc/apache2/sites-available/captcha.zillyhuhn.com-le-ssl.conf
 /etc/apache2/sites-available/chillerbot.zillyhuhn.com.conf
 /etc/apache2/sites-available/chillerbot.zillyhuhn.com-le-ssl.conf
 /etc/apache2/sites-available/mail.zillyhuhn.com.conf
